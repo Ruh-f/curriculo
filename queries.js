@@ -44,7 +44,7 @@ const updateCurriculo = (request, response) => {
 
   pool.query(
     'UPDATE curriculo SET Nome = $1, Email = $2, Contato = $3 Experiências = $4',
-    [Nome , endereco, formacao, experiencia, id],
+    [Nome,  Email, Contato, Experiências, id],
     (error, results) => {
       if (error) {
         throw error
